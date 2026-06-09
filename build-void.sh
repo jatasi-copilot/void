@@ -55,4 +55,17 @@ fs.writeFileSync('./out/nls.messages.json', JSON.stringify(messages, null, 2));
 console.log('NLS: ' + Object.keys(messages).length + ' keys written');
 "
 
-echo "=== Build complete. Launch with: npx electron ./out/main.js ==="
+if [[ "$(uname)" == "Darwin" ]]; then
+  echo "→ Packaging macOS .app bundle..."
+  ./node_modules/.bin/gulp vscode-darwin-arm64 2>&1 | tail -5
+
+  echo "→ Installing to /Applications..."
+  rm -rf /Applications/Void.app
+  mv ~/VSCode-darwin-arm64/Void.app /Applications/Void.app
+  rmdir ~/VSCode-darwin-arm64 2>/dev/null || true
+  echo "✓ Void.app installed to /Applications"
+fi
+
+echo "=== Build complete ==="
+echo "  macOS: /Applications/Void.app"
+echo "  Dev:   npx electron ./out/main.js"
