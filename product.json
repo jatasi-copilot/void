@@ -34,16 +34,14 @@
 	"urlProtocol": "void",
 	"extensionsGallery": {
 		"serviceUrl": "https://open-vsx.org/vscode/gallery",
-		"itemUrl": "https://open-vsx.org/extension",
-		"resourceUrlTemplate": "https://open-vsx.org/vscode/unpkg/{publisher}/{name}/{version}/{path}",
-		"extensionUrlTemplate": "https://open-vsx.org/vscode/gallery/{publisher}/{name}/latest"
+		"itemUrl": "https://open-vsx.org/extension/{publisher}/{name}",
+		"resourceUrlTemplate": "https://open-vsx.org/vscode/asset/{publisher}/{name}/{version}/Microsoft.VisualStudio.Code.WebResources/{path}"
 	},
+	"builtInExtensions": [],
 	"linkProtectionTrustedDomains": [
 		"https://voideditor.com",
 		"https://voideditor.dev",
 		"https://github.com/voideditor/void",
 		"https://ollama.com"
-	],
-	"builtInExtensions": [],
-	"extensionSignatureVerificationSetting": "None"
+	]
 }

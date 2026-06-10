@@ -67,12 +67,13 @@ export class ExtensionGalleryManifestService extends Disposable implements IExte
 		}
 
 		if (extensionsGallery.itemUrl) {
+			const isTemplate = extensionsGallery.itemUrl.includes('{publisher}');
 			resources.push({
-				id: `${extensionsGallery.itemUrl}/{publisher}/{name}`,
+				id: isTemplate ? extensionsGallery.itemUrl : `${extensionsGallery.itemUrl}/?itemName={publisher}.{name}`,
 				type: ExtensionGalleryResourceType.ExtensionDetailsViewUri
 			});
 			resources.push({
-				id: `${extensionsGallery.itemUrl}/{publisher}/{name}`,
+				id: isTemplate ? extensionsGallery.itemUrl : `${extensionsGallery.itemUrl}/?itemName={publisher}.{name}&ssr=false#review-details`,
 				type: ExtensionGalleryResourceType.ExtensionRatingViewUri
 			});
 		}

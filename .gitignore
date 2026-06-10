@@ -22,6 +22,9 @@ product.overrides.json
 *.snap.actual
 .vscode-test
 
+# Windows launch scripts (VBScript — local only, not committed)
+scripts/*.vbs
+
 # Void added these:
 .tmp/
 .tmp2/
