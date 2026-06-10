@@ -39,13 +39,11 @@
 		"extensionUrlTemplate": "https://open-vsx.org/vscode/gallery/{publisher}/{name}/latest"
 	},
 	"linkProtectionTrustedDomains": [
-		"https://open-vsx.org"
-	],
-	"builtInExtensions": [],
-	"linkProtectionTrustedDomains": [
 		"https://voideditor.com",
 		"https://voideditor.dev",
 		"https://github.com/voideditor/void",
 		"https://ollama.com"
-	]
+	],
+	"builtInExtensions": [],
+	"extensionSignatureVerificationSetting": "None"
 }
