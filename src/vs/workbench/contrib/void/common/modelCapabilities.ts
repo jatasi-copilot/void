@@ -305,6 +305,7 @@ const openSourceModelOptions_assumingOAICompat = {
 		supportsSystemMessage: 'system-role',
 		reasoningCapabilities: false,
 		contextWindow: 32_000, reservedOutputTokenSpace: 4_096,
+		specialToolFormat: 'openai-style',
 	},
 	// llama 4 https://ai.meta.com/blog/llama-4-multimodal-intelligence/
 	'llama4-scout': {
