@@ -34,7 +34,7 @@
 	"urlProtocol": "void",
 	"extensionsGallery": {
 		"serviceUrl": "https://open-vsx.org/vscode/gallery",
-		"itemUrl": "https://open-vsx.org/vscode/item",
+		"itemUrl": "https://open-vsx.org/extension",
 		"resourceUrlTemplate": "https://open-vsx.org/vscode/unpkg/{publisher}/{name}/{version}/{path}",
 		"extensionUrlTemplate": "https://open-vsx.org/vscode/gallery/{publisher}/{name}/latest"
 	},
